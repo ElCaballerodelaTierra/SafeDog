@@ -10,6 +10,7 @@
     --color-secondary: #44A194;
     --color-tertiary: #F0BB69;
     --color-cuarto: #7F636E;
+    --cafe-titulos: #382c31;
 
 }
 
@@ -120,11 +121,8 @@ body {
 }
 
 .imagenPortada{
-
-padding: 0px;
-border-radius: 20px;
-border: #fff9d1 8px solid;
 height: 250px;
+margin: auto;
 }
 
 
@@ -329,10 +327,11 @@ height: 250px;
 /*<!--------ESTELARES -------------- >*/
 .Estelares {
     display: flex;
+    
     justify-content: center; /* Centra horizontalmente los elementos hijos */
     align-items: center; /* Centra verticalmente los elementos hijos */
     gap: 30px; /* Espacio entre los div hijos */
-    
+    margin: 10px;  
 }
 
 .Estelares div {
@@ -344,7 +343,9 @@ height: 250px;
     max-height: 100%;
     display: block;
     object-fit: contain;
-    margin: 0 auto; /* Centra las imágenes dentro de cada div hijo */
+    margin: auto; /* Centra las imágenes dentro de cada div hijo */
+    border-radius: 50px;
+    padding: auto;
   }
   
 
@@ -361,7 +362,7 @@ height: 250px;
 }
 
 .wrapper {
-    border: n;
+    border: 0;
     justify-content: center;
     position: relative;
     display: flex;
@@ -369,7 +370,7 @@ height: 250px;
     /* Ensure elements are stacked vertically */
     gap: 1em;
     padding: 1.5em;
-    background-color: #FFFFFF;
+    background-color: var(--bg-color);
     max-width: 100%; /* Prevent overflow */
     box-sizing: border-box; /* Include padding in width/height */
 
@@ -377,7 +378,7 @@ height: 250px;
 
 .Card-review {
     background-color: #82bfb8;
-    width: 50vw;
+    width: 75vw;
     max-width: 40em;
     border-radius: 0.6em;
     box-shadow: 0 1.8em 3em rgb(1, 17, 39, 0.15);
@@ -403,10 +404,10 @@ height: 250px;
     height: 2.2em;
     width: 2.2em;
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--color-tertiary);
     margin: auto;
     border: none;
-    color: #244f1c;
+    color: var(--bg-color);
     box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
     cursor: pointer;
     border-radius: 50%;
@@ -426,7 +427,7 @@ height: 250px;
 }
 
 #testimonialReview {
-    color: var(--color-primary);
+    color: var(--cafe-titulos);
     text-align: center;
     font-size: 1.1em;
     line-height: 1.5em;
@@ -446,7 +447,7 @@ height: 250px;
 }
 
 #testimonialName {
-    color: var(--color-primary);
+    color: var(--cafe-titulos);
     font-size: 1.8em;
     text-align: right;
 }
@@ -508,7 +509,9 @@ height: 250px;
         max-width: 100%;
         height: auto;
     }
-
+    .Estelares{
+        flex-direction: column; 
+    }
 
 }
 
@@ -518,11 +521,18 @@ height: 250px;
         flex-direction: column; 
         gap: 4.2em; 
     }
+    .Estelares{
+        flex-direction: column; 
+    }
 }
   
 @media screen and (max-width: 480px) {
 
     .boxesContainer {
+        flex-direction: column; 
+    }
+
+    .Estelares{
         flex-direction: column; 
     }
     
