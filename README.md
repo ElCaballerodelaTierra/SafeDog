@@ -1,5 +1,5 @@
-#SafeDog
-##Proyecto final del bootcamp de Generation México
+# SafeDog
+## Proyecto final del bootcamp de Generation México
 
 
 Bienvenido al repositorio de SafeDog en GitHub. Este proyecto es una plataforma de comercio electrónico diseñada para conectar a personas que cuidan mascotas, ofreciendo una variedad de servicios adicionales.
