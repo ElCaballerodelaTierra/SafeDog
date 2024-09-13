@@ -35,7 +35,7 @@ body {
 
 body h2{
  font-family:var(--font-primary);
- color: #4f3d44;
+ color: #753950;
 }
 
 
@@ -134,22 +134,77 @@ body h2{
     margin: 0 20px;
 }
 
-.stat-block{
-    line-height: 1.5;
+ /*Inicio valores*/
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 0px;
 }
 
-.stat-block p{
-    line-height: 1.2;
-    font-size: 20px;
-    font-family: "Sansita";
+.cards {
+    background-color: rgb(218, 209, 201);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 10px;
 }
 
-.stat-block ul{
-    line-height: 2.0;
+#titulo-seccion {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+
+.stat-block {
+    text-align: center;
+}
+
+
+.listaValores {
     list-style: none;
-    font-size: 20px;
-    font-family: "Roboto";
+    padding: 0;
 }
+
+.listaValores li {
+    margin: 10px 0;
+    font-size: 18px;
+    font-size: 20px;
+}
+
+.listaValores i {
+    font-weight: bold;
+    font-style: normal;
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card {
+        width: 80%; /* Las cards ocuparán un 80% del ancho de la pantalla */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Para móviles pequeños, las cards ocuparán todo el ancho */
+        margin-bottom: 20px;
+    }
+
+    #titulo-seccion {
+        font-size: 20px;
+    }
+
+    .listaValores li {
+        font-size: 16px;
+    }
+}
+/*Final Valores*/
 
 .image-div {
     background-position: center;

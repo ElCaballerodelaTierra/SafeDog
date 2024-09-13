@@ -17,6 +17,7 @@
 body {
     margin: 0px;
     background-color: #FFF8E0;
+ 
 }
 
 /*     
@@ -35,6 +36,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+
 
 .titulo {
     font-family: 'Sansita';
@@ -176,13 +178,25 @@ margin: auto;
 } */
 
 /*---Card box----*/
+
+/* .divCentrado{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+} */
+
 .boxesContainer{
-    display: flex;
+display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
+   text-align: center;
    margin: 20px;
    padding: 20px;
+
+   
 }
 .cardBox {
    /* float: left;*/
@@ -221,7 +235,7 @@ margin: auto;
     color: rgb(0, 0, 0);/*color de texto*/
     display: block;
     border:0px solid orange;
-    border-radius: 10%;
+   
     font-size: 1.2em;
     height: 100%;
     padding: 0.8em;
@@ -250,7 +264,7 @@ margin: auto;
     border: 0px;
     align-items: center;
     justify-items: center;
-    border-radius: 10%;
+   
     font-size: 1.2em;
     height: 100%;
     padding: 0.8em;
@@ -264,9 +278,11 @@ margin: auto;
 .back {
     align-content: center;
     transform: rotateY(180deg);
-    font-size: 1.2rem;
+    font-size: 1rem;
     box-sizing: border-box; 
+    border-radius: 10px;
 }
+
 
 /*---Back color card---*/
 .cardBox:nth-child(1) .card .back {
@@ -344,7 +360,7 @@ margin: auto;
     display: block;
     object-fit: contain;
     margin: auto; /* Centra las imágenes dentro de cada div hijo */
-    border-radius: 50px;
+    border-radius: 10px;
     padding: auto;
     
   }
@@ -501,8 +517,18 @@ margin: auto;
     .Estelares{
         flex-direction: column; 
     }
+    .card {
+        height: 200px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease 0s;
+    }
+
+    .cardBox.flipped .card {
+        transform: rotateY(180deg);
+    }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 800px) {
     .boxesContainer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -519,8 +545,6 @@ margin: auto;
 
     .card {
         height: 200px;
-        background: linear-gradient(135deg, var(--color-tertiary) 10%, #eadc93d1 100%);
-        border-radius: 10px;
         transform-style: preserve-3d;
         transition: transform 0.6s ease 0s;
     }
@@ -540,6 +564,7 @@ margin: auto;
         align-items: center;
         padding: 10px;
         box-sizing: border-box;
+        border-radius: 10px;
     }
 
     .back {
@@ -547,6 +572,8 @@ margin: auto;
         background: #7F636E;
         color: white;
         font-size: 0.9rem;
+        border-radius: 10px;
+        
     }
 
     .front img {
@@ -558,6 +585,22 @@ margin: auto;
     .titulosTarjeta {
         font-size: 1rem;
         margin: 5px 0;
+    }
+    .nombreYUbicacion{
+        padding: 0px;
+        text-align: center;
+    }
+    .nombre{
+        text-align: center;
+        font-size: 40px;
+        padding: 0px;
+    }
+    .ubicacion{
+        padding: 10px;
+    }
+    #Servicios{
+        margin: 5px 0 0 0 ;
+        
     }
 }
 
@@ -577,10 +620,55 @@ margin: auto;
     .reviews{
         margin-top: 10px;
     }
+   
+}
 
+@media screen and (max-width: 400px) {
+    .titulo{
+        font-size: 20px;
+        width: 40%;
+    }
 }
 
 .img--hospedaje {
     width: 150px;
     height: auto;
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .imagenDeFondo{
+        height: 60vh;
+    }
+    .boxesContainer{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .boton{
+        position:relative;
+        bottom: 100px;
+        font-size: 60px;
+    }
+    .divBoton {
+        position: absolute;
+        bottom: -20%;
+        left: 28%;
+        text-align: center;
+        padding: 30px;
+      }
+      .divPerfil{
+        position: absolute;
+        bottom: 45%;
+        right: 30%;
+      }
+      .nombreYUbicacion{
+        position: absolute;
+        bottom: 30%;
+        right: 30%;
+      }
+      .titulo{
+        font-size: 40px;
+        width: 30%;
+      }
 }
