@@ -75,7 +75,7 @@ body {
   }
 
 .dropdown select {
-    width: 130px;
+    width: 160px;
     font-size: 15px;
     border-radius: 15px;
     font-size: 25px;
@@ -144,6 +144,8 @@ body {
         /* Más sombra interna */ none; /* Sin sombra externa */
     }
   }
+
+
   
 
 @media (max-width: 600px) {
@@ -167,5 +169,6 @@ input {
     align-items: center;
     justify-content: center;
 }
+
 
 
