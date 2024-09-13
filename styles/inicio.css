@@ -49,7 +49,7 @@ body {
 
 .divBoton {
     position: absolute;
-    bottom: -20%;
+    bottom: -50%;
     left: 21%;
     text-align: center;
     padding: 30px;
@@ -88,8 +88,8 @@ body {
 
 .divPerfil {
     position: absolute;
-    bottom: 60%;
-    right: 20px;
+    bottom: 40%;
+    right: 30%;
     text-align: center;
     z-index: 2;
 
@@ -116,7 +116,7 @@ body {
     border-radius: 50%;
     border: 0.7vh solid #7F636E;
     /* border-image:linear-gradient(45deg, red,lime,blue); */
-    height: 20vh;
+    
     width: auto;
     z-index: 2;
     cursor: pointer;
@@ -620,14 +620,25 @@ display: flex;
     .reviews{
         margin-top: 10px;
     }
-   
+    .imagenPortada{
+        /* height: 100px;
+        width: 100px; */
+        border-radius: 10%;
+      }
 }
 
 @media screen and (max-width: 400px) {
     .titulo{
         font-size: 20px;
         width: 40%;
+    
+    }    
+.imagenDePerfil {
+    
+    width: 100px;
+    cursor: pointer;
     }
+    
 }
 
 .img--hospedaje {
@@ -670,5 +681,9 @@ display: flex;
       .titulo{
         font-size: 40px;
         width: 30%;
+      }
+      .imagenPortada{
+        height: 2.4em;
+        width: auto;
       }
 }

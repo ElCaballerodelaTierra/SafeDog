@@ -342,13 +342,14 @@ h2{
     }
 }
 
+/*******/
 .EquipoCarrousell {
     width: 95%; 
     overflow: hidden;
     display: flex;
     margin: 0px auto;
     text-align: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;  
 }
 
 .Contenedor-Carrousell {
@@ -358,7 +359,7 @@ h2{
 }
 
 .Contenedor-Carrousell {
- width: 100%;    
+ width: 80%;    
   max-width: 100%;
   min-width: 320px;
   margin: auto;
@@ -371,7 +372,6 @@ h2{
     display: grid;
     grid-auto-flow: column;
     overflow: none;
-    animation: slide 20s infinite;
     width: 100%;
     height: auto;
     margin: 0;
@@ -431,7 +431,7 @@ h2{
 
 @media screen and (min-width: 3000px) {
 
-    .Lista-desordenada {
+     .Lista-desordenada {
         
         grid-auto-columns: calc((100% / 10) - 40px);
         gap: 40px;
@@ -500,31 +500,36 @@ background-position: center;
 
 .botonTarjeta{
     transition: all 600ms ease;
-}
+} 
+
+
 
 /*Boton next*/
-/* .boton-next {
+.boton-next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    position: sticky; 
+    margin-top: 50px;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
+    background-color: #7e6471;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}*/
+    border-radius: 5px;
+    user-select: none; 
+    
+    
+}
 
 .boton-next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px;
+   
 }
 
 .boton-next:hover {
     background-color: rgba(0, 0, 0, 0.8); 
+
 }
 /*Boton next*/
 
