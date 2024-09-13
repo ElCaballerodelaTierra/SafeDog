@@ -12,7 +12,7 @@
           "profile_photo":"https://i.ibb.co/KVh0KcV/Paulina.jpg",
           "nombre": "Mariana del Valle ", 
           "description":"Joven dedicada con especial atención a las necesidades de perros mayores y con requerimientos especiales." ,
-          "ciudad": "Colonia del Valle, Ciudad de Mexico"
+          "ciudad": "Ciudad de Mexico"
         },
         {
           "id": "3",
@@ -59,7 +59,7 @@
         },
     {
       "id": "9",
-         "profile_photo":" https://i.ibb.co/xzMM5b8/Hugo.jpg",
+         "profile_photo":"https://i.ibb.co/5rkxsFy/Andres.webp",
          "nombre": "Hugo Salazar", 
          "description":"Ofrece servicio completo, incluye baño, cepillado y mucho cariño para tu perrito",
         "ciudad":"Guadalajara"
@@ -67,11 +67,10 @@
       },
     {
       "id": "10",
-        "profile_photo":"https://i.ibb.co/TkxLzXm/Andres.jpg",
+        "profile_photo":"https://i.ibb.co/QMVZcMq/Andress.jpg",
         "nombre": "Andrés Navarro", 
          "description":"Paseador confiable con conocimiento en psicología canina, ayudando a manejar perros con ansiedad.",
       "ciudad": "Ciudad de Mexico"
         }
     ]
     }
-    
