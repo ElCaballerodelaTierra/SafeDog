@@ -70,8 +70,8 @@ body {
     /* height: 3rem;
         width: 3rem; */
     position: relative;
-    left: 5rem;
-    bottom: 0;
+    left: 33rem;
+    bottom: -5rem;
     z-index: 2;
     cursor: pointer;
     /*transform: translateY(-20%);*/
@@ -168,6 +168,7 @@ margin: auto;
     position: relative;
     text-align: right;
     padding: 20px;
+    right: 7rem;
 }
 
 
