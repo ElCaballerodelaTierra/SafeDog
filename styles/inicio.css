@@ -57,7 +57,7 @@ body {
 
 .boton {
     color: var(--font-color-w);
-    background: linear-gradient( -135deg, var(--color-tertiary) 10%, #eadc93d1 100%);
+    background: linear-gradient( -135deg, var(--color-tertiary) 100%, #eadc93d1 100%);
     padding: 1.5rem 2rem 1.5rem 2rem;
     border: none;
     border-radius: 40px;
@@ -74,7 +74,7 @@ body {
     /* transition: background-color 0.7s, border-color 0.7s; */
 }
 .boton:hover {
-    background: linear-gradient( 135deg, #7F636E 10%, #3f2705d1 90%);    
+    background: linear-gradient( 135deg, #7F636E 100%, #3f2705d1 100%);    
     
     border-color: var(--color-tertiary);
     color: var(--bg-color);
