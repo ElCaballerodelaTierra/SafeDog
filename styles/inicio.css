@@ -47,6 +47,7 @@ body {
     padding: 5px;
 }
 
+/*
 .divBoton {
     position: absolute;
     bottom: -50%;
@@ -55,24 +56,25 @@ body {
     padding: 30px;
 
 
-}
+}*/
 
 .boton {
     color: var(--font-color-w);
     background: linear-gradient( -135deg, var(--color-tertiary) 100%, #eadc93d1 100%);
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding:0;
+    height: 3.5rem;
     border: none;
-    border-radius: 40px;
+    border-radius: 5px;
     font-size: 3vh;
     font-family: 'Sansita';
     /* height: 3rem;
         width: 3rem; */
     position: relative;
-    left: 0;
+    left: 5rem;
     bottom: 0;
     z-index: 2;
     cursor: pointer;
-    transform: translateY(-40%);
+    /*transform: translateY(-20%);*/
     /* transition: background-color 0.7s, border-color 0.7s; */
 }
 .boton:hover {
@@ -90,7 +92,7 @@ body {
     position: absolute;
     bottom: 40%;
     right: 30%;
-    text-align: center;
+    
     z-index: 2;
 
 }
@@ -117,7 +119,7 @@ body {
     border: 0.7vh solid #7F636E;
     /* border-image:linear-gradient(45deg, red,lime,blue); */
     
-    width: auto;
+    width: 60%;
     z-index: 2;
     cursor: pointer;
 }
@@ -507,7 +509,7 @@ display: flex;
 /*---Medias Queries---*/
 
 
-
+/*
 @media screen and (max-width:650px){
     .wrapper{
         font-size: 14px;
@@ -527,6 +529,9 @@ display: flex;
         transform: rotateY(180deg);
     }
 }
+*/
+
+/*
 
 @media screen and (max-width: 800px) {
     .boxesContainer {
@@ -535,12 +540,11 @@ display: flex;
         justify-content: space-around;
         padding: 10px;
     }
-
     .cardBox {
         width: 45%; /* Aproximadamente dos tarjetas por fila */
-        margin: 5px;
+      /*  margin: 5px;
         perspective: 800px;
-        cursor: pointer; /* Indica que es interactivo */
+        cursor: pointer; /* Indica que es interactivo *//*
     }
 
     .card {
@@ -573,7 +577,6 @@ display: flex;
         color: white;
         font-size: 0.9rem;
         border-radius: 10px;
-        
     }
 
     .front img {
@@ -600,10 +603,24 @@ display: flex;
     }
     #Servicios{
         margin: 5px 0 0 0 ;
-        
+    }
+    .imagenDePerfil{
+        width: 60%;
+        display: flex;
+        align-items: center;
+
+    }
+    .divPerfil{
+        width: 60%;
+        display: flex;
+        align-items: center;
+
     }
 }
+*/
 
+
+/*
 @media screen and (max-width: 400px) {
 
     img {
@@ -620,33 +637,33 @@ display: flex;
     .reviews{
         margin-top: 10px;
     }
+
     .imagenPortada{
         /* height: 100px;
         width: 100px; */
         border-radius: 10%;
       }
-}
 
-@media screen and (max-width: 400px) {
-    .titulo{
+      .titulo{
         font-size: 20px;
-        width: 40%;
-    
+        width: 40%; 
     }    
-.imagenDePerfil {
+
+    .imagenDePerfil {
     
     width: 100px;
     cursor: pointer;
     }
     
-}
-
-.img--hospedaje {
+    .img--hospedaje {
     width: 150px;
     height: auto;
+    }
 }
 
+*/
 
+/*
 @media screen and (min-width: 1400px) {
 
     .imagenDeFondo{
@@ -671,7 +688,10 @@ display: flex;
       .divPerfil{
         position: absolute;
         bottom: 45%;
-        right: 30%;
+        right: 30%; 
+      }
+      .imagenDePerfil{
+        width: 60%;
       }
       .nombreYUbicacion{
         position: absolute;
@@ -683,7 +703,8 @@ display: flex;
         width: 30%;
       }
       .imagenPortada{
-        height: 2.4em;
-        width: auto;
+     
+        width: 400px;
       }
 }
+      */
