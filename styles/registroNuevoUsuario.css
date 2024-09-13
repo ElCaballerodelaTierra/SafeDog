@@ -199,6 +199,7 @@
     margin-left:200px;
 }
 
+
 .iconos img {
     width: 40px; /* Ajusta el tamaño según lo necesites */
     height: 40px; /* Ajusta el tamaño según lo necesites */
@@ -211,8 +212,8 @@
 }
 
 .iconos .logo--insta {
-    width: 36px; /* Tamaño ajustado */
-    height: 30px; /* Tamaño ajustado */
+    width: 56px; /* Tamaño ajustado */
+    height: 50px; /* Tamaño ajustado */
 }
 
 .footer--copy {

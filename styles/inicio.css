@@ -187,10 +187,10 @@ margin: auto;
 .cardBox {
    /* float: left;*/
     font-size: 1.2em;
-    margin: 1% 0 0 1%;
+    margin:10px;
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    width: 23.7%;
+    width: 20%;
     border-radius: 5%;
 }
 
@@ -247,7 +247,7 @@ margin: auto;
     color: white;
     /*color de texto*/
     display: block;
-    border: solid #853b58;
+    border: 0px;
     align-items: center;
     justify-items: center;
     border-radius: 10%;
@@ -492,14 +492,18 @@ margin: auto;
 @media screen and (max-width: 400px) {
 
     .cardBox {
-        margin: 5%;
-        width: calc(50% - 1em);
+        margin: 10px;
+        
     }
 
     .card {
-        font-size: 3vw;
-        height: 285px;
-        
+        font-size: 14px;   
+        flex-direction: row;
+        width: 25%;
+    }
+    .boxesContainer{
+        display: flexbox;
+        height: 250px;
     }
 
     .cardBox:last-child {
@@ -530,7 +534,7 @@ margin: auto;
 @media screen and (max-width: 480px) {
 
     .boxesContainer {
-        flex-direction: column; 
+        flex-direction: row; 
     }
 
     .Estelares{
@@ -538,8 +542,8 @@ margin: auto;
     }
     
     .cardBox {
-        width: 94.5%;
-        height: 290px;
+
+
     }
 
     .card {
@@ -552,6 +556,7 @@ margin: auto;
         max-width: 100%;
         height: auto;
     }
+    
 
 }
 

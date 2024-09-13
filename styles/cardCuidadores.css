@@ -154,35 +154,39 @@ body{
         text-align: center;
         list-style: none;
         justify-content: center;
+        
     }
     
     .pagination li{
         background-color: #1bb1c4bd;
         display:inline-block;
         cursor: pointer;
+        
     
     
     
     }
     
     .pagination .page-item{
-        background-color: #2bc992;
+        background-color: #F0BB69;
+        border-radius: 10px;
+    
     }
     
     .page-link {
-        color: #12110f; /*Color del texto*/
-        background-color: #f1f1f1;;
+        color: #705962; /*Color del texto*/
+        background-color: #F0BB69;;
     }
     
     .page-item.active .page-link {
-        background-color: #7F636E; /* Cambia el color de fondo */
+        background-color: #ffffff; /* Cambia el color de fondo */
         border-color: #F0BB69; /* Cambia el color del borde */
-        color: rgb(233, 233, 233); /* Cambia el color del texto */
+        color: #705962; /* Cambia el color del texto */
     }
     
     .page-link:hover {
-        background-color:  #44A194; /* Cambia el color de fondo al pasar el ratón */
-        color: white; /* Cambia el color del texto */
+        background-color:  #ffffff; /* Cambia el color de fondo al pasar el ratón */
+        color: rgb(0, 0, 0); /* Cambia el color del texto */
     }
     
     
@@ -270,25 +274,7 @@ body{
     
     
     
-    .iconos{
-        display: flex;
-        gap: 20px;
-        
-    }
-    
-    .iconos img{
-        width: 50px;
-        height: 50px;
-    }
-    .iconos .logo--fb{
-        width: 58px;
-        height: 48px;
-    }
-    
-    .iconos .logo--insta{
-        width: 60px;
-        height: 50px;
-    }
+  
     
     
     .footer--copy{
