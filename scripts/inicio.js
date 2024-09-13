@@ -36,14 +36,14 @@ const testimonials = [
   {
       nameTestimonial:"Sara Sanchez",
       locationTestimonial:"Tláhuac - Ciudad de México",
-      imageTestimonial: "./assets/",
-      reviewTestimonial: "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi adipisci eius exercitationem ratione ex quod. Libero impedit et quos est qui neque deleniti veniam?",
+      imageTestimonial: "./assets/foto-dueño.png",
+      reviewTestimonial: "Excelente servicio, mi perrita Luna estaba muy feliz cuando la recogí. El cuidador fue muy atento y me mantuvo informada todo el tiempo. ¡Definitivamente lo recomiendo!",
   },
   {
-      nameTestimonial:"Johana Frias",
-      locationTestimonial:"Ciudad de México - Ajusco",
-      imageTestimonial: "./assets/fotosAcercadeNosotros/Johana.png",
-      reviewTestimonial: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a ipsam earum quasi ducimus repellat tempora id quas minima iste unde neque sed quidem, dolore fugiat eligendi itaque laborum blanditiis et ea culpa. Ea, fugiat."},
+      nameTestimonial:"Jesus Jimenez",
+      locationTestimonial:"Guadalajara - México",
+      imageTestimonial: "./assets/Cuidador01.jpeg",
+      reviewTestimonial: "Mi perro Max recibió un trato de primera. El cuidador le dio paseos largos y jugó mucho con él. Estoy muy contento con el servicio y Max también. ¡Cinco estrellas!"},
 ];
 
 //Current slide
@@ -96,4 +96,14 @@ let displayTestimonials = (index) => {
 
 window.addEventListener('DOMContentLoaded', () => {
   displayTestimonials(i);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cardBoxes = document.querySelectorAll('.cardBox');
+  
+  cardBoxes.forEach(box => {
+      box.addEventListener('click', function() {
+          this.classList.toggle('flipped');
+      });
+  });
 });
