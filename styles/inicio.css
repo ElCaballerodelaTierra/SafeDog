@@ -69,9 +69,7 @@ body {
     font-family: 'Sansita';
     /* height: 3rem;
         width: 3rem; */
-    position: relative;
-    left: 33rem;
-    bottom: -5rem;
+    /*position: relative;*/
     z-index: 2;
     cursor: pointer;
     /*transform: translateY(-20%);*/
@@ -103,6 +101,12 @@ body {
     font-size: 3rem;
     z-index: 2;
     padding: 20px;
+}
+
+.divBoton{
+    text-align: right;
+    padding: 20px;
+    right: 7rem;
 }
 
 .ubicacion {
@@ -169,6 +173,7 @@ margin: auto;
     text-align: right;
     padding: 20px;
     right: 7rem;
+    z-index: 2;
 }
 
 

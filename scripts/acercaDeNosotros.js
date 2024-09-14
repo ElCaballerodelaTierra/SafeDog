@@ -4,27 +4,14 @@ function mover(n) {
     const items = document.querySelectorAll('.Elemento-lista');
     const totalItems = items.length;
     const itemsPerView = 4;
+    const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
 
-    // Ocultar todos los elementos
-    items.forEach((item) => {
-        item.style.display = 'none';
-    });
+    // Calcular el nuevo índice
+    index = (index + n > maxIndex) ? 0 : (index + n < 0) ? maxIndex : index + n;
 
-    // Calcular el índice inicial del primer elemento visible
-    const startIndex = index * itemsPerView;
-    for (let i = startIndex; i < startIndex + itemsPerView && i < totalItems; i++) {
-        items[i].style.display = 'block';
-    }
-
-    // Actualizar el índice
-    index += n;
-
-    // Asegurarse de que el índice no se salga de los límites
-    if (index >= Math.ceil(totalItems / itemsPerView)) {
-        index = 0;
-    } else if (index < 0) {
-        index = Math.ceil(totalItems / itemsPerView) - 1;
-    }
+    // Ajustar la posición del carrusel
+    const offset = -index * (100 / itemsPerView);
+    document.querySelector('.Lista-desordenada').style.transform = `translateX(${offset}%)`;
 }
 
 // Inicializar para mostrar los primeros elementos

@@ -35,7 +35,7 @@ body {
 
 body h2{
  font-family:var(--font-primary);
- color: #753950;
+ color: #4f3d44;
 }
 
 
@@ -134,77 +134,22 @@ body h2{
     margin: 0 20px;
 }
 
- /*Inicio valores*/
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-    padding: 10px;
-    padding-top: 0px;
+.stat-block{
+    line-height: 1.5;
 }
 
-.cards {
-    background-color: rgb(218, 209, 201);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    padding: 10px;
-}
-
-#titulo-seccion {
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center; 
-}
-
-
-.stat-block {
-    text-align: center;
-}
-
-
-.listaValores {
-    list-style: none;
-    padding: 0;
-}
-
-.listaValores li {
-    margin: 10px 0;
-    font-size: 18px;
+.stat-block p{
+    line-height: 1.2;
     font-size: 20px;
+    font-family: "Sansita";
 }
 
-.listaValores i {
-    font-weight: bold;
-    font-style: normal;
+.stat-block ul{
+    line-height: 2.0;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Roboto";
 }
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .card {
-        width: 80%; /* Las cards ocuparán un 80% del ancho de la pantalla */
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 100%; /* Para móviles pequeños, las cards ocuparán todo el ancho */
-        margin-bottom: 20px;
-    }
-
-    #titulo-seccion {
-        font-size: 20px;
-    }
-
-    .listaValores li {
-        font-size: 16px;
-    }
-}
-/*Final Valores*/
 
 .image-div {
     background-position: center;
@@ -342,14 +287,13 @@ h2{
     }
 }
 
-/*******/
 .EquipoCarrousell {
     width: 95%; 
     overflow: hidden;
     display: flex;
     margin: 0px auto;
     text-align: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;   
 }
 
 .Contenedor-Carrousell {
@@ -359,7 +303,7 @@ h2{
 }
 
 .Contenedor-Carrousell {
- width: 80%;    
+ width: 100%;    
   max-width: 100%;
   min-width: 320px;
   margin: auto;
@@ -372,6 +316,7 @@ h2{
     display: grid;
     grid-auto-flow: column;
     overflow: none;
+    animation: slide 20s infinite;
     width: 100%;
     height: auto;
     margin: 0;
@@ -431,7 +376,7 @@ h2{
 
 @media screen and (min-width: 3000px) {
 
-     .Lista-desordenada {
+    .Lista-desordenada {
         
         grid-auto-columns: calc((100% / 10) - 40px);
         gap: 40px;
@@ -500,38 +445,7 @@ background-position: center;
 
 .botonTarjeta{
     transition: all 600ms ease;
-} 
-
-
-
-/*Boton next*/
-.boton-next {
-    cursor: pointer;
-    position: sticky; 
-    margin-top: 50px;
-    width: auto;
-    padding: 16px;
-    background-color: #7e6471;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 5px;
-    user-select: none; 
-    
-    
 }
-
-.boton-next {
-    border-radius: 3px;
-   
-}
-
-.boton-next:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
-
-}
-/*Boton next*/
 
 .botonTarjeta:hover{
     
