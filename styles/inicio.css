@@ -87,12 +87,10 @@ body {
 }
 
 .divPerfil {
-    position: absolute;
-    bottom: 40%;
-    right: 30%;
-    
-    z-index: 2;
-
+    position: absolute;    
+    z-index: 2;    
+    right: 20%;
+    bottom: 10%;
 }
 
 .nombre {
@@ -515,7 +513,7 @@ display: flex;
 /*---Medias Queries---*/
 
 
-/*
+
 @media screen and (max-width:650px){
     .wrapper{
         font-size: 14px;
@@ -535,9 +533,9 @@ display: flex;
         transform: rotateY(180deg);
     }
 }
-*/
 
-/*
+
+
 
 @media screen and (max-width: 800px) {
     .boxesContainer {
@@ -548,9 +546,9 @@ display: flex;
     }
     .cardBox {
         width: 45%; /* Aproximadamente dos tarjetas por fila */
-      /*  margin: 5px;
+        margin: 5px;
         perspective: 800px;
-        cursor: pointer; /* Indica que es interactivo *//*
+        cursor: pointer; /* Indica que es interactivo */
     }
 
     .card {
@@ -623,11 +621,11 @@ display: flex;
 
     }
 }
-*/
 
 
-/*
-@media screen and (max-width: 400px) {
+
+
+@media screen and (max-width: 700px) {
 
     img {
         max-width: 100%;
@@ -644,10 +642,8 @@ display: flex;
         margin-top: 10px;
     }
 
-    .imagenPortada{
-        /* height: 100px;
-        width: 100px; */
-        border-radius: 10%;
+    .imagenPortada img{
+        border-radius: 40px;
       }
 
       .titulo{
@@ -665,11 +661,20 @@ display: flex;
     width: 150px;
     height: auto;
     }
+    .nombreYUbicacion{
+        right: 0;
+        bottom: -30%;
+    }
+    .divPerfil{
+        right: 0;
+        
+    }
+    .nombre{
+    
+    }
 }
 
-*/
 
-/*
 @media screen and (min-width: 1400px) {
 
     .imagenDeFondo{
@@ -713,4 +718,3 @@ display: flex;
         width: 400px;
       }
 }
-      */
