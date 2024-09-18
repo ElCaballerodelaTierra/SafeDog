@@ -1,7 +1,6 @@
 :root {
     /* Colores */
 
-
     /* --------------------------------- */
     /* Color de fondo */
     --bg-color: #FFF8E0;
@@ -20,43 +19,29 @@ body {
  
 }
 
-/*     
-    div{
-        border: 5px solid rgb(0, 255, 4);
-        padding: 0px;
-    } 
-    */
+/* div{
+    border: 5px solid rgb(0, 255, 4);
+    padding: 0px;
+}  */
+    
 
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
 
 
 .titulo {
     font-family: 'Sansita';
     color: antiquewhite;
-    font-size: 3vw;
-    text-shadow: 2px 3px 2px black;
+    font-size: 3rem;
+    text-shadow: 2px 3px 2px rgb(60, 60, 60);
     width: 50%;
-    padding: 5px;
+    padding: 10px;
 }
 
-/*
+
 .divBoton {
-    position: absolute;
-    bottom: -50%;
-    left: 21%;
+    position: relative;
     text-align: center;
-    padding: 30px;
-
-
-}*/
+    z-index: 2;
+}
 
 .boton {
     color: var(--font-color-w);
@@ -64,16 +49,14 @@ body {
     padding:0;
     height: 3.5rem;
     border: none;
-    border-radius: 5px;
-    font-size: 3vh;
+    border-radius: 15px;
     font-family: 'Sansita';
     /* height: 3rem;
         width: 3rem; */
-    /*position: relative;*/
+    position: relative;
     z-index: 2;
     cursor: pointer;
-    /*transform: translateY(-20%);*/
-    /* transition: background-color 0.7s, border-color 0.7s; */
+    transition: background-color 0.7s, border-color 0.7s; 
 }
 .boton:hover {
     background: linear-gradient( 135deg, #7F636E 100%, #3f2705d1 100%);    
@@ -87,10 +70,9 @@ body {
 }
 
 .divPerfil {
-    position: absolute;    
     z-index: 2;    
-    right: 20%;
-    bottom: 10%;
+    position: absolute;
+
 }
 
 .nombre {
@@ -98,13 +80,19 @@ body {
     color: black;
     font-size: 3rem;
     z-index: 2;
-    padding: 20px;
+    padding: 10px;
 }
 
 .divBoton{
-    text-align: right;
-    padding: 20px;
-    right: 7rem;
+    text-align: center;
+    margin: 10px;
+    z-index: 2;
+
+}
+
+.datosCuidadora{
+    
+    
 }
 
 .ubicacion {
@@ -122,7 +110,7 @@ body {
     /* border-image:linear-gradient(45deg, red,lime,blue); */
     
     width: 60%;
-    z-index: 2;
+
     cursor: pointer;
 }
 
@@ -131,6 +119,10 @@ height: 250px;
 margin: auto;
 }
 
+.Estelares img{
+    border-radius: 20%;
+    }
+    
 
 .imagenDeFondo {
 
@@ -168,29 +160,20 @@ margin: auto;
 
 .nombreYUbicacion {
     position: relative;
-    text-align: right;
-    padding: 20px;
-    right: 7rem;
+    text-align: center;
+    /* padding: 20px;
+    right: 7rem; */
+    bottom: 0%;
     z-index: 2;
+    align-items: center;
 }
 
 
 /* <!------------------- Cards ------------------->*/
 
-/* a:hover {
-    background: #fff;
-    color: #333;
-    text-shadow: 0 0 1px #333;
-} */
 
 /*---Card box----*/
 
-/* .divCentrado{
-display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1300px;
-} */
 
 .boxesContainer{
 display: flex;
@@ -201,9 +184,12 @@ display: flex;
    text-align: center;
    margin: 20px;
    padding: 20px;
-
-   
 }
+
+.perfilYBoton{
+    z-index: 2;
+}
+
 .cardBox {
    /* float: left;*/
     font-size: 1.2em;
@@ -366,7 +352,6 @@ display: flex;
     display: block;
     object-fit: contain;
     margin: auto; /* Centra las imágenes dentro de cada div hijo */
-    border-radius: 10px;
     padding: auto;
     
   }
@@ -512,7 +497,57 @@ display: flex;
 
 /*---Medias Queries---*/
 
+/* Estilos generales */
+.perfilYBoton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: -100px; /* Ajusta según sea necesario para superponerse a la imagen de fondo */
+}
 
+.divPerfil {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.imagenDePerfil {
+    width: 150px; /* Tamaño fijo para la imagen de perfil */
+    height: 150px;
+    border-radius: 50%;
+    border: 0.7vh solid #7F636E;
+    object-fit: cover;
+}
+
+.nombreYUbicacion {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nombre {
+    font-family: 'Sansita';
+    color: black;
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.ubicacion {
+    font-family: 'Sansita';
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+.boton {
+    /* Tus estilos actuales para el botón */
+    padding: 10px 20px;
+    font-size: 1rem;
+}
 
 @media screen and (max-width:650px){
     .wrapper{
@@ -608,16 +643,17 @@ display: flex;
     #Servicios{
         margin: 5px 0 0 0 ;
     }
-    .imagenDePerfil{
-        width: 60%;
-        display: flex;
-        align-items: center;
 
-    }
-    .divPerfil{
-        width: 60%;
+    .imagenDePerfil{
+        /* width: 60%;
         display: flex;
-        align-items: center;
+        align-items: center; */
+    }
+
+    .divPerfil{
+        /* width: 60%;
+        display: flex;
+        align-items: center; */
 
     }
 }
@@ -642,38 +678,59 @@ display: flex;
         margin-top: 10px;
     }
 
-    .imagenPortada img{
-        border-radius: 40px;
-      }
+ 
 
       .titulo{
         font-size: 20px;
         width: 40%; 
     }    
-
-    .imagenDePerfil {
-    
-    width: 100px;
-    cursor: pointer;
-    }
     
     .img--hospedaje {
     width: 150px;
     height: auto;
     }
-    .nombreYUbicacion{
-        right: 0;
-        bottom: -30%;
+
+
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .perfilYBoton {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: -150px;
     }
-    .divPerfil{
-        right: 0;
-        
+
+  
+    .nombreYUbicacion {
+        text-align: left;
     }
-    .nombre{
-    
+
+    .divBoton {
+        margin-top: 0;
+        align-self: flex-end;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .perfilYBoton {
+        justify-content: flex-start;
+        padding-left: 10%;
+    }
+
+    .nombre {
+        font-size: 2.5rem;
+    }
+
+    .ubicacion {
+        font-size: 1.2rem;
+    }
+
+    .boton {
+        font-size: 1.2rem;
+    }
+}
 
 @media screen and (min-width: 1400px) {
 
@@ -686,23 +743,26 @@ display: flex;
     }
     .boton{
         position:relative;
-        bottom: 100px;
-        font-size: 60px;
+        z-index: 2;
+        font-size: 40px;
+
     }
     .divBoton {
-        position: absolute;
-        bottom: -20%;
-        left: 28%;
-        text-align: center;
-        padding: 30px;
+        position: relative;
+
+        /* bottom: -20%;
+        left: 28%; */
+        text-align: left;
+        z-index: 2;
+
       }
       .divPerfil{
         position: absolute;
-        bottom: 45%;
-        right: 30%; 
+        bottom: 5%;
+        right: 500px;  
       }
       .imagenDePerfil{
-        width: 60%;
+        /* width: 60%; */
       }
       .nombreYUbicacion{
         position: absolute;
