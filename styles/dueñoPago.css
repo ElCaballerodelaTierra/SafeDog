@@ -253,6 +253,11 @@ h1{
     size: 1rem;
 
 }
+.tamaño-de-iconos-cuidador-secundarios{
+    max-width: 110px;
+    
+    
+}
 
 .tamaño-de-iconos-dueño-secundarios {
     max-width: 20px;
