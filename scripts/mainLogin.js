@@ -119,7 +119,7 @@ function usersTest(duenioInfo, username, password) {
       timer: 1500,
     }).then(() => {
       // Redirect or update the UI after successful login
-      window.location.href = "../inicio.html";
+      window.location.href = "../index.html";
     });
   } else if (duenioInfo && duenioInfo.correo === username) {
     Swal.fire({

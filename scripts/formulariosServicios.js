@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Mostrar alert al usuario de que se guardó la información
       alert('Su información ha sido enviada con éxito y será revisada por el equipo de SafeDog. Recibirá una respuesta en las próximas 72 horas. Agradecemos su preferencia y confianza.');
       // Redirigir a otra página después del alert
-      window.location.href = '../inicio.html';
+      window.location.href = '../index.html';
       /*
     })
     .catch(error => {
