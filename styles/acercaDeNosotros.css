@@ -87,10 +87,10 @@ body h2{
     justify-content: center;
 }
 
-#titulo-seccion{
+/* #titulo-seccion{
     text-align: left;
     font-size: 30px;
-}
+} */
 
 .nuestroEquipo{
     justify-content: center;
@@ -99,18 +99,15 @@ body h2{
 
 }
 
-.listaValores{
-/* padding: -20px; */
-}
 
 .Tarjeta-miembro span{
     padding: 0px;
     margin: 0px;
 }
-#titulo-seccion ul{
+/* #titulo-seccion ul{
     margin: 0px;
     
-}
+} */
 
 #tituloTarjeta { 
     color: #4f3d44 ;
@@ -150,6 +147,58 @@ body h2{
     font-size: 20px;
     font-family: "Roboto";
 }
+
+/*Cards Valores*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .cards {
+    background-color: #dad5d5;
+    border: 2px solid #F0BB69;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease;
+  }
+
+  .cards:hover {
+    transform: scale(1.05);
+  }
+
+  #titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: "Sansita", sans-serif;
+  }
+s
+  .listaValores {
+    list-style: none;
+    padding: 0;
+  }
+
+  .listaValores li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Sansita", sans-serif;
+
+  }
+
+  .listaValores i {
+    font-weight: bold;
+    color: #7F636E;
+  }
+
+  .stat-block {
+    text-align: center;
+  }
+  /*Cards Valores*/
 
 .image-div {
     background-position: center;

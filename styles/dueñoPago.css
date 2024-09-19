@@ -125,6 +125,8 @@ h1{
     border-radius: .5rem;
 }
 
+
+
 .form-tipo-tarjeta button {
     width: 100%;
     padding: 10px;
@@ -253,9 +255,9 @@ h1{
 }
 
 .tamaño-de-iconos-dueño-secundarios {
-    max-width: 25%;
+    max-width: 20px;
     size: 1rem;
-    width: 3.125rem;
+    width: 3px;
 
 }
 
