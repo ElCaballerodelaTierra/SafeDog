@@ -26,7 +26,12 @@ body {
 }  */
     
 
-
+.portada{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .titulo {
     font-family: 'Sansita';
@@ -39,25 +44,24 @@ body {
 
 
 .divBoton {
-    position: relative;
-    text-align: center;
     z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton {
     color: var(--font-color-w);
     background: linear-gradient( -135deg, var(--color-tertiary) 100%, #eadc93d1 100%);
-    padding:0;
-    height: 3.5rem;
+    padding:20%;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
+    font-size: large;
     font-family: 'Sansita';
-    /* height: 3rem;
-        width: 3rem; */
-    position: relative;
-    z-index: 2;
     cursor: pointer;
     transition: background-color 0.7s, border-color 0.7s; 
+   
 }
 .boton:hover {
     background: linear-gradient( 135deg, #7F636E 100%, #3f2705d1 100%);    
@@ -72,7 +76,6 @@ body {
 
 .divPerfil {
     z-index: 2;    
-    position: absolute;
 
 }
 
@@ -85,15 +88,19 @@ body {
 }
 
 .divBoton{
-    text-align: center;
-    margin: 10px;
     z-index: 2;
+    margin: 10px;
 
 }
 
 .datosCuidadora{
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+
 }
 
 .ubicacion {
@@ -187,9 +194,7 @@ display: flex;
    padding: 20px;
 }
 
-.perfilYBoton{
-    z-index: 2;
-}
+
 
 .cardBox {
    /* float: left;*/
@@ -500,10 +505,7 @@ display: flex;
 
 /* Estilos generales */
 .perfilYBoton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+
     z-index: 2;
     margin-top: -100px; /* Ajusta según sea necesario para superponerse a la imagen de fondo */
 }
@@ -544,11 +546,6 @@ display: flex;
 }
 
 
-.boton {
-    /* Tus estilos actuales para el botón */
-    padding: 10px 20px;
-    font-size: 1rem;
-}
 
 @media screen and (max-width:650px){
     .wrapper{
@@ -702,17 +699,8 @@ display: flex;
         align-items: flex-start;
         margin-top: -150px;
     }
-
   
-    .nombreYUbicacion {
-        text-align: left;
     }
-
-    .divBoton {
-        margin-top: 0;
-        align-self: flex-end;
-    }
-}
 
 @media screen and (min-width: 1024px) {
     .perfilYBoton {
