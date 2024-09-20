@@ -45,7 +45,7 @@ body {
 }
 .letras{
     font-size:25px;
-    text-align: right;
+  
     
     justify-content: center;
     text-align: center;
@@ -167,6 +167,9 @@ body {
 
 .dropdown-menu ul li a:hover {
     background-color: #4AA09A;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 /* Mostrar el menú desplegable cuando esté activo */
@@ -198,7 +201,7 @@ a{
 .dropdown-menu ul li:nth-child(2) a {
     background-color: transparent;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
 /* Medios responsive */
