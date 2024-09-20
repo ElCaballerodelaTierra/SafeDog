@@ -3,7 +3,7 @@ let index = 0;
 function mover(n) {
     const items = document.querySelectorAll('.Elemento-lista');
     const totalItems = items.length;
-    const itemsPerView = 4;
+    const itemsPerView = 10;
     const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
 
     // Calcular el nuevo índice
