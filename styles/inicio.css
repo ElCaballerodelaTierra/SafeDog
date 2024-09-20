@@ -216,7 +216,7 @@ min-height: 200px;
 
 /*----Diseño 3D de la tarjeta y giro---*/
 .card {
-    background: linear-gradient(135deg, var(--color-tertiary) 10%, #eadc93d1 100%);
+    
     align-items: center;
     justify-items: center;
     cursor: default;
@@ -231,6 +231,7 @@ min-height: 200px;
 
 /*Esconder la parte trasera de la tarjeta*/
 .front {
+    background: linear-gradient(135deg, var(--color-tertiary) 10%, #eadc93d1 100%);
     backface-visibility: hidden;
     box-sizing: border-box;
     color: rgb(0, 0, 0);
@@ -685,7 +686,8 @@ min-height: 200px;
 
     .back {
         transform: rotateY(180deg);
-        background: #7F636E;
+       
+        background-color: #382c31;
         color: white;
         font-size: 0.9rem;
         border-radius: 10px;
