@@ -16,18 +16,19 @@
 body {
     margin: 0px;
     background-color: #FFF8E0;
- 
+
 }
+
 /* Marcas divs en verde y mostrar estrutura de la página web */
 
 /* div{
     border: 5px solid rgb(0, 255, 4);
     padding: 0px;
 }  */
-    
 
-.portada{
-    display: flex ;
+
+.portada {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -36,7 +37,7 @@ body {
 .titulo {
     font-family: 'Sansita';
     color: antiquewhite;
- 
+
     text-shadow: 2px 3px 2px rgb(60, 60, 60);
     width: 50%;
     padding: 10px;
@@ -53,24 +54,25 @@ body {
 
 .boton {
     color: var(--font-color-w);
-    background: linear-gradient( -135deg, var(--color-tertiary) 100%, #eadc93d1 100%);
-    padding:20%;
+    background: linear-gradient(-135deg, var(--color-tertiary) 100%, #eadc93d1 100%);
+    padding: 20%;
     border: none;
     border-radius: 20px;
     font-size: large;
     font-family: 'Sansita';
     cursor: pointer;
-    transition: background-color 0.7s, border-color 0.7s; 
-   
+    transition: background-color 0.7s, border-color 0.7s;
+
 }
+
 .boton:hover {
-    background: linear-gradient( 135deg, #7F636E 100%, #3f2705d1 100%);    
-    
+    background: linear-gradient(135deg, #7F636E 100%, #3f2705d1 100%);
+
     border-color: var(--color-tertiary);
     color: var(--bg-color);
 }
 
-.centrar{
+.centrar {
     text-align: center;
 }
 
@@ -91,20 +93,20 @@ body {
     padding: 10px;
 }
 
-.divBoton{
+.divBoton {
     z-index: 2;
     margin: 10px;
 
 }
 
-.datosCuidadora{
+.datosCuidadora {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 2;
     max-width: 1400px;
-
+    margin-top: -120px;
 }
 
 .ubicacion {
@@ -120,17 +122,18 @@ body {
     border-radius: 50%;
     border: 0.7vh solid #7F636E;
     cursor: pointer;
+    object-fit: cover;
 }
 
-.imagenPortada{
-height: 250px;
-margin: auto;
+.imagenPortada {
+    height: 250px;
+    margin: auto;
 }
 
-.Estelares img{
+.Estelares img {
     border-radius: 20%;
-    }
-    
+}
+
 
 .imagenDeFondo {
 
@@ -183,23 +186,23 @@ margin: auto;
 /*---Card box----*/
 
 
-.boxesContainer{
-display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   margin: 20px;
-   padding: 20px;
+.boxesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
 }
 
 
 
 .cardBox {
-   /* float: left;*/
+    /* float: left;*/
     font-size: 1.2em;
-    margin:10px;
+    margin: 10px;
     perspective: 800px;
     transition: all 0.3s ease 0s;
     width: 20%;
@@ -213,7 +216,7 @@ display: flex;
 
 /*----Diseño 3D de la tarjeta y giro---*/
 .card {
-    background: linear-gradient( 135deg, var(--color-tertiary) 10%, #eadc93d1 100%);
+    background: linear-gradient(135deg, var(--color-tertiary) 10%, #eadc93d1 100%);
     align-items: center;
     justify-items: center;
     cursor: default;
@@ -230,10 +233,11 @@ display: flex;
 .front {
     backface-visibility: hidden;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);/*color de texto*/
+    color: rgb(0, 0, 0);
+    /*color de texto*/
     display: block;
-    border:0px solid orange;
-   
+    border: 0px solid orange;
+
     font-size: 1.2em;
     height: 100%;
     padding: 0.8em;
@@ -243,12 +247,12 @@ display: flex;
     cursor: pointer;
 }
 
-.front img{
+.front img {
     object-fit: contain;
     width: 100px;
 }
 
-.titulosTarjeta{
+.titulosTarjeta {
     text-align: center;
 
 }
@@ -264,7 +268,8 @@ display: flex;
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -288,7 +293,7 @@ display: flex;
     border: 0px;
     align-items: center;
     justify-items: center;
-   
+
     font-size: 1.2em;
     height: 100%;
     padding: 0.8em;
@@ -303,7 +308,7 @@ display: flex;
     align-content: center;
     transform: rotateY(180deg);
     font-size: 1rem;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     border-radius: 10px;
 }
 
@@ -367,27 +372,33 @@ display: flex;
 /*<!--------ESTELARES -------------- >*/
 .Estelares {
     display: flex;
-    
-    justify-content: center; /* Centra horizontalmente los elementos hijos */
-    align-items: center; /* Centra verticalmente los elementos hijos */
-    gap: 30px; /* Espacio entre los div hijos */
-    margin: 10px;  
+
+    justify-content: center;
+    /* Centra horizontalmente los elementos hijos */
+    align-items: center;
+    /* Centra verticalmente los elementos hijos */
+    gap: 30px;
+    /* Espacio entre los div hijos */
+    margin: 10px;
 }
 
 .Estelares div {
-    text-align: center; 
-}/* Centra el contenido de cada div hijo */
+    text-align: center;
+}
+
+/* Centra el contenido de cada div hijo */
 
 .Estelares img {
     max-width: 100%;
     max-height: 100%;
     display: block;
     object-fit: contain;
-    margin: auto; /* Centra las imágenes dentro de cada div hijo */
+    margin: auto;
+    /* Centra las imágenes dentro de cada div hijo */
     padding: auto;
-    
-  }
-  
+
+}
+
 
 
 
@@ -397,8 +408,8 @@ display: flex;
     display: flex;
     justify-content: center;
     margin-top: 5em;
-    padding:2em;
-    box-sizing: border-box; 
+    padding: 2em;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -411,8 +422,10 @@ display: flex;
     gap: 1em;
     padding: 1.5em;
     background-color: var(--bg-color);
-    max-width: 100%; /* Prevent overflow */
-    box-sizing: border-box; /* Include padding in width/height */
+    max-width: 100%;
+    /* Prevent overflow */
+    box-sizing: border-box;
+    /* Include padding in width/height */
 
 }
 
@@ -527,22 +540,6 @@ display: flex;
 
 
 
-/*---Medias Queries---*/
-
-/* Estilos generales */
-.perfilYBoton {
-
-    z-index: 2;
-    margin-top: -100px; /* Ajusta según sea necesario para superponerse a la imagen de fondo */
-}
-
-
-
-.imagenDePerfil {
-    border-radius: 50%;
-    border: 0.7vh solid #7F636E;
-    object-fit: cover;
-}
 
 .nombreYUbicacion {
     text-align: center;
@@ -565,29 +562,7 @@ display: flex;
     padding: 5px 0;
 }
 
-
-
-@media screen and (max-width:650px){
-    .wrapper{
-        font-size: 14px;
-        flex-direction: column; 
-        gap: 4.2em; 
-    }
-    .Estelares{
-        flex-direction: column; 
-    }
-    .card {
-        height: 200px;
-        transform-style: preserve-3d;
-        transition: transform 0.6s ease 0s;
-    }
-
-    .cardBox.flipped .card {
-        transform: rotateY(180deg);
-    }
-}
-
-
+/*---Medias Queries---*/
 
 
 
@@ -598,29 +573,58 @@ display: flex;
         max-width: 100%;
         height: auto;
     }
-    .Estelares{
-        flex-direction: column; 
+
+    .Estelares {
+        flex-direction: column;
         padding: 5%;
     }
-    .Card-review{
+
+    .Card-review {
         margin: 20px 0 50px 0;
     }
-    .reviews{
+
+    .reviews {
         margin-top: 10px;
     }
-    .titulo{
+
+    .titulo {
         font-size: 16px;
-        width: 40%; 
-    }    
-    .img--hospedaje {
-    width: 150px;
-    height: auto;
+        width: 40%;
     }
 
+    .img--hospedaje {
+        width: 150px;
+        height: auto;
+    }
 
 }
 
-/* Media Queries */
+@media screen and (max-width:650px) {
+    .wrapper {
+        font-size: 14px;
+        flex-direction: column;
+        gap: 4.2em;
+    }
+
+    .Estelares {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 200px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease 0s;
+    }
+
+    .cardBox.flipped .card {
+        transform: rotateY(180deg);
+    }
+}
+
+
+
+
+
 @media screen and (min-width: 768px) {
     .perfilYBoton {
         flex-direction: row;
@@ -628,23 +632,30 @@ display: flex;
         align-items: flex-start;
         margin-top: -150px;
     }
-  
+
 }
 
 
 
 @media screen and (max-width: 900px) {
+
+    .imagenPortada{
+        min-height: 150px;
+      }
     .boxesContainer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
     }
+
     .cardBox {
-        width: 45%; /* Aproximadamente dos tarjetas por fila */
+        width: 45%;
+        /* Aproximadamente dos tarjetas por fila */
         margin: 5px;
         perspective: 800px;
-        cursor: pointer; /* Indica que es interactivo */
+        cursor: pointer;
+        /* Indica que es interactivo */
     }
 
     .card {
@@ -657,7 +668,8 @@ display: flex;
         transform: rotateY(180deg);
     }
 
-    .front, .back {
+    .front,
+    .back {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -685,113 +697,94 @@ display: flex;
         margin-bottom: 5px;
     }
 
+}
+
+@media screen and (max-width:950px) {
+
     .titulosTarjeta {
         font-size: 1rem;
         margin: 5px 0;
     }
-    .nombreYUbicacion{
+
+    .nombreYUbicacion {
         padding: 0px;
         text-align: center;
-    }
-    .nombre{
-        text-align: center;
-        font-size: 40px;
-        padding: 0px;
-    }
-    .ubicacion{
-        padding: 10px;
-    }
-    #Servicios{
-        margin: 5px 0 0 0 ;
-    }
-
-    .imagenDePerfil{
-        width: 60%;
-        display: flex;
-        align-items: center;
-    }
-
-    .divPerfil{
-        /* width: 60%;
-        display: flex;
-        align-items: center; */
-
-    }
-}
-
-
-@media screen and (min-width: 1024px) {
-    .perfilYBoton {
-        justify-content: flex-start;
-        padding-left: 10%;
     }
 
     .nombre {
-        font-size: 2.5rem;
+        text-align: center;
+        font-size: 40px;
+        padding: 0px;
     }
 
     .ubicacion {
-        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #Servicios {
+        margin: 5px 0 0 0;
+    }
+
+    .imagenDePerfil {
+        display: flex;
+        align-items: center;
+        width: 50vw;
+        max-width: 300px;
+
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+
+    .titulo {
+        font-size: 30px;
+        width: 30%;
+    }
+
+    .imagenDeFondo {
+        height: 60vh;
+    }
+
+    .datosCuidadora {
+
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -200px;
+    }
+    .imagenDePerfil {
+        width: 90%;
+    }
+
+    .nombreYUbicacion {
+        margin: 50px;
+    }
+
+    .imagenPortada {
+        width: 400px;
+    }
+
+    .divBoton {
+        margin: 40px;
     }
 
     .boton {
-        font-size: 1.2rem;
-    }
-}
+        font-size: 40px;
+        object-fit: scale-down;
 
-@media screen and (min-width: 1400px) {
-
-    .imagenDeFondo{
-        height: 60vh;
     }
-    .boxesContainer{
+
+    .boxesContainer {
         max-width: 1500px;
         margin: 0 auto;
     }
-    .boton{
-        position:relative;
-        z-index: 2;
-        font-size: 40px;
 
-    }
-    .divBoton {
-        position: relative;
-
-        /* bottom: -20%;
-        left: 28%; */
-        text-align: left;
-        z-index: 2;
-
-      }
-      .divPerfil{
-        position: absolute;
-        bottom: 5%;
-        right: 500px;  
-      }
-      .imagenDePerfil{
-        /* width: 60%; */
-      }
-      .nombreYUbicacion{
-        position: absolute;
-        bottom: 30%;
-        right: 30%;
-      }
-      .titulo{
-        font-size: 30px;
-        width: 30%;
-      }
-      .imagenPortada{
-     
-        width: 400px;
-      }
-
-
-    
     .cardBox {
-        
+
         margin: 5px;
 
-        cursor: pointer; /* Indica que es interactivo */
+        cursor: pointer;
+        /* Indica que es interactivo */
     }
 
     .card {
@@ -804,7 +797,8 @@ display: flex;
         transform: rotateY(180deg);
     }
 
-    .front, .back {
+    .front,
+    .back {
         position: absolute;
         width: 100%;
         height: 100%;

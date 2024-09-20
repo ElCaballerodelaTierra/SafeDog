@@ -207,6 +207,8 @@ body {
   padding: 2rem 3rem;
   border-radius: 9px;
   border: none;
+  color: #fff
+  ;
 }
 
 .section--cuidador--resumen {
@@ -435,5 +437,6 @@ body {
 }
 
 #experiencia {
-  font-size: %;
+  font-size: 3rem;
+  line-height: 140%;
 }
