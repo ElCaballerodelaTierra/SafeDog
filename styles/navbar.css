@@ -127,7 +127,7 @@ body {
     width: 250px;
     display: none;
     border-radius: 10px;
-    z-index: 1000; /* Asegura que el menú se muestre encima */
+    z-index: 1001; /* Asegura que el menú se muestre encima */
 }
 
 .dropdown-menu ul {
